@@ -257,6 +257,24 @@
 <!-- doctors section ends -->
 
 <!-- booking section starts   -->
+<script >
+    function myfun() {
+    var a = document.froms['bookform']['mobileno'];
+    if(a == ""){
+        alert('Enter mobile number');
+    }
+    if(a.length < 10){
+    alert("Mobile number is not valid");
+    }
+    if(a.length >10){
+    alert('Mobile number is not valid');
+    }
+    if ((charAt(0) != 9) && (charAt(0) != 8) && (charAt(0) != 7)) {
+    alert('Mobile number is not valid');
+    }
+    return true;
+}
+</script>
 
 <section class="book" id="book">
 
@@ -268,10 +286,10 @@
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH1XIv02m0hXk_USYbps9gHUqtqP6eOvGsSQ&usqp=CAU" alt="">
         </div>
 
-        <form action="">
+        <form name="bookform" action="" onsubmit="return myfun()">
             <h3>book appointment</h3>
             <input type="text" placeholder="your name" class="box">
-            <input type="number" placeholder="your number" class="box">
+            <input name="mobileno" type="number" placeholder="your number" class="box">
             <input type="email" placeholder="your email" class="box">
             <input type="date" class="box">
             <input type="submit" value="book now" class="btn">

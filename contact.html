@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Contact Us Page Design using Html CSS</title>
+    <title>Contact Us Page </title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <link rel="stylesheet" href="contact2.css">
 </head>
 <body>
-    <script src="script.js"></script>
+    <script src="check.js"></script>
     <section id="section-wrapper">
         <div class="box-wrapper">
             <div class="info-wrap">
@@ -20,11 +20,11 @@
                 <ul class="info-details">
                     <li>
                         <i class="fas fa-phone-alt"></i>
-                        <span>Phone:</span> <a href="tel:+ 1235 2355 98">+111-222-3333</a>
+                        <span>Phone:</span> <a href="tel:+111-222-3333">+111-222-3333</a>
                     </li>
                     <li>
                         <i class="fas fa-paper-plane"></i>
-                        <span>Email:</span> <a href="mailto:info@yoursite.com">spark@gmail.com </a>
+                        <span>Email:</span> <a href="mailto:spark@gmail.com">spark@gmail.com </a>
                     </li>
                     <li>
                         <i class="fas fa-globe"></i>
@@ -38,7 +38,7 @@
                 </ul>
             </div>
             <div class="form-wrap">
-                <form action="#" method="POST" onsubmit="return myfun() ">
+                <form name="bookform" action="#" method="POST" onsubmit="return myfun() ">
                     <h2 class="form-title">Send us a message</h2>
                     <div class="form-fields">
                         <div class="form-group">
@@ -51,14 +51,13 @@
                             <input type="email" class="email" placeholder="Mail">
                         </div>
                         <div class="form-group">
-                            <input type="number" class="phone" id="mobilenumber" placeholder="10 digit phone number" value="">
-                            <span id="meassages" style="color:red" ></span>
+                            <input type="text" name="Phone-Number" placeholder="Enter Your Phone Number" class="number">
                         </div>
                         <div class="form-group">
                             <textarea name="message" id="" placeholder="Write your message"></textarea>
                         </div>
                     </div>
-                    <input type="submit" value="Send Message" class="submit-button">
+                    <input type="submit" value="submit" class="submit">
                 </form>
             </div>
         </div>
