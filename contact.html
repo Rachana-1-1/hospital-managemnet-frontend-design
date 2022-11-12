@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="contact2.css">
 </head>
 <body>
+    <script src="script.js"></script>
     <section id="section-wrapper">
         <div class="box-wrapper">
             <div class="info-wrap">
@@ -19,15 +20,15 @@
                 <ul class="info-details">
                     <li>
                         <i class="fas fa-phone-alt"></i>
-                        <span>Phone:</span> <a href="tel:+ 1235 2355 98">+ 1235 2355 98</a>
+                        <span>Phone:</span> <a href="tel:+ 1235 2355 98">+111-222-3333</a>
                     </li>
                     <li>
                         <i class="fas fa-paper-plane"></i>
-                        <span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a>
+                        <span>Email:</span> <a href="mailto:info@yoursite.com">spark@gmail.com </a>
                     </li>
                     <li>
                         <i class="fas fa-globe"></i>
-                        <span>Website:</span> <a href="#">yoursite.com</a>
+                        <span>Website:</span> <a href="#">thissite.com</a>
                     </li>
                 </ul>
                 <ul class="social-icons">
@@ -37,7 +38,7 @@
                 </ul>
             </div>
             <div class="form-wrap">
-                <form action="#" method="POST">
+                <form action="#" method="POST" onsubmit="return myfun() ">
                     <h2 class="form-title">Send us a message</h2>
                     <div class="form-fields">
                         <div class="form-group">
@@ -50,7 +51,8 @@
                             <input type="email" class="email" placeholder="Mail">
                         </div>
                         <div class="form-group">
-                            <input type="number" class="phone" placeholder="Phone">
+                            <input type="number" class="phone" id="mobilenumber" placeholder="10 digit phone number" value="">
+                            <span id="meassages" style="color:red" ></span>
                         </div>
                         <div class="form-group">
                             <textarea name="message" id="" placeholder="Write your message"></textarea>
